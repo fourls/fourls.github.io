@@ -1,0 +1,10 @@
+<ul class="cardset">
+  {% for project in site.projects %}
+    <li style="background-image: url({{ project.image_url }});">
+      <div class="card-overlay">
+        <h2>{{ project.name }} ({{ project.type }})</h2>
+        {{ project.content }}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

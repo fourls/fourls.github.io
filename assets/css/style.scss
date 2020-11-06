@@ -20,6 +20,10 @@ body {
   margin-top: $section-gap;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 .spacer {
   flex: 1;
 }
@@ -73,6 +77,8 @@ ul.cardset {
   grid-auto-rows: 400px;
   grid-gap: 1em;
 
+  margin: 1em 0;
+
   li {
     list-style: none;
 
@@ -92,6 +98,10 @@ ul.cardset {
       &:hover { 
         background-color: transparentize($c-black,0.4);
         opacity: 1;
+      }
+
+      p {
+        text-align: justify;
       }
     }
   }
