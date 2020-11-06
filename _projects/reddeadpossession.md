@@ -2,10 +2,16 @@
 name: Red Dead Possession
 type: game
 image_url: /assets/img/possess.png
-keywords:
+links: 
+  - name: Play
+    url: https://google.com
+  - name: View repository
+    url: https://github.com/fourls/reddeadpossession
+tags:
   - game
   - godot
-  - 2d
+  - gdscript
+  - complete
 ---
 *Red Dead Possession* was made in Godot, a 2D/3D game development engine, in three days as part of a self-inflicted coding challenge.
 

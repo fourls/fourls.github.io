@@ -2,8 +2,18 @@
   {% for project in site.projects %}
     <li style="background-image: url({{ project.image_url }});">
       <div class="card-overlay">
-        <h2>{{ project.name }} ({{ project.type }})</h2>
-        {{ project.content }}
+        <div class="card-heading">
+          <h2>{{ project.name }}</h2>
+          <p>{% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</p>
+        </div>
+        <div class="card-body">
+          {{ project.content }}
+        </div>
+        <div class="card-footer">
+          {% for projlink in project.links %}
+            <a class="btn" href="{{ projlink.url }}">{{ projlink.name }}</a>
+          {% endfor %}
+        </div>
       </div>
     </li>
   {% endfor %}
