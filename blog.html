@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog
+---
+<section class="content dark">
+  <h1>My Blog</h1>
+  <ul class="postlist">
+    {% for post in site.posts %}
+      <li class="light">
+        <span class="date">{{post.date | date_to_string}}</span>
+        <h1><a href="{{post.url}}">{{post.title}}</a></h1>
+        <p>{{post.description}}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

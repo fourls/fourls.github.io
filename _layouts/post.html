@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<section class="content dark slim-btm">
+  <h2>{{ page.date | date_to_string }}</h2>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description }}</p>
+</section>
+<section class="content light">
+  <article>
+    {{ content }}
+  </article>
+</section>
