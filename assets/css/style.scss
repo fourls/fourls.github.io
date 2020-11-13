@@ -264,11 +264,20 @@ section.content {
         max-height: 250px;
       }
     }
+
+    ol, ul {
+      margin-left: 1.5em;
+    }
+
+    > ol, > ul {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
     
     figure {
       margin: 0 auto;
 
-      & > p {
+      > p {
         text-align: center;
       }
 
@@ -291,7 +300,13 @@ section.content {
 
     // inline code snippet
     code.highlighter-rouge {
-      padding: 0.3em 0.5em;
+      // padding: 0.3em 0.5em;
+
+      font-weight: bold;
+    }
+
+    & > div.highlighter-rouge {
+      margin-bottom: 1em;
     }
 
     // code block
@@ -310,15 +325,17 @@ section.content {
       border-top: 1px solid black;
       border-left: 1px solid black;
 
-      margin: 0 auto;
+      margin-bottom: 1em;
 
-      td {
+      td, th {
         padding: 0.2em 0.5em;
         border-right: 1px solid black;
         border-bottom: 1px solid black;
 
         background-color: #fff;
       }
+
+      th { background-color: darken($c-white,5); }
     }
   }
 
