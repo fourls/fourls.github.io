@@ -1,12 +1,8 @@
 ---
 name: Red Dead Possession
 type: game
-image_url: /assets/img/possess.png
+image_url: /assets/img/projects/possess.png
 links: 
-  - name: Play
-    url: https://google.com
-  - name: View repository
-    url: https://github.com/fourls/reddeadpossession
 tags:
   - game
   - godot
